@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Dvd
+    public class Dvd : Item
     {
 
     }

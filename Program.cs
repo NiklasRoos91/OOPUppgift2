@@ -4,10 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Librarian librarian1 = new Librarian();
 
-            librarian1.ReturnItem();
-            librarian1.BorrowItem();
+
+            Dvd dvd1 = new Dvd
+            {
+                AuthorOrDirector = "Steven"
+            };
+
+            Console.WriteLine($"DVD Director: {dvd1.AuthorOrDirector}");
         }
     }
 }
