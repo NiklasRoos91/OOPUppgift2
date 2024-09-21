@@ -12,21 +12,21 @@ namespace Library
         public int Id;
         public int Fine;
 
-        // hantering av utlåning och återlämning där den används olika för Member och Librarian
+        // Abstrakta metoder med hantering av utlåning och återlämning där den används olika för Member och Librarian
         public abstract void BorrowItem();
 
         public abstract void ReturnItem();
 
         // Räknar ut vad bötern ska vara
-        public void CalculateFine();
+        public void CalculateFine()
         {
-            // Vet inte hur den skulle se ut men så lämnar metoden tom
+            Console.WriteLine("The calculated Fine");
         }
-
+      
         // Hanterar betalning av böter
-        public void PayFine();
+        public void PayFine()
         {
-            // Vet inte hur den skulle se ut men så lämnar metoden tom
+            Console.WriteLine("Paying Fine");
         }
     }
 }
